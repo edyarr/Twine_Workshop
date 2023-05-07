@@ -8,7 +8,7 @@
 
 ### **3. Playing with Twine** 
 
-As we discussed, Twine is an open source platform used to create games/interactive stories. You can use the tool both on the browser or locally on your desktop. On both instances, your games/stories will be previewed on your browser. For this workshop, we will use Twine as a browser applicaion though. 
+As we discussed, Twine is an open source platform used to create games/interactive stories. You can use the tool both on the browser or locally on your desktop. Regardless of what option you select, your games/stories will be previewed on your browser because Twine produces an HTML file. For this workshop, we will use Twine as a browser applicaion though. 
 
 Please follow the next steps: 
 * Go to [Twine](https://twinery.org/) 
