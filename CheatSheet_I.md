@@ -1,15 +1,15 @@
 <h2 style="text-align: center;">Cheat Sheet Twine</h2>
 
 
-In this cheat sheet you will find the code for teh basci concepts and actions we will be developing throughout the workshop. It is divided in sections, from the most basic to the inclussion of macros which are snippets of code. 
+In this cheat sheet you will find the code for the basic concepts we will be covering throughout the workshop. It is divided in sections, from the most basic (e.g. creating links) to the more advanced operations (e.g. macros or snippets of code to execute actions). The version of Twine we'll be using is called [Harlowe 3.5](https://twine2.neocities.org/), and you can access the Cookbook or manual using the link provided above. This cheat sheet extracts information directly from the Cookbook and contextualizes it for the workshop. 
 
-## **Basic**
+## **Basic Level**
 
 ### **Creating links**
 
-You need to write the following code: `[[Title of target page]]` or `[[Title you want the reader to see |Page's Title]]`
+You need to write the following code: `[[Title of target page]]` or `[[Title you want the reader to see |Page's Title]]` ==> `[[Beginning]]` or `[[Passage 1|The beginning of our story]]`
 
-### **Formating Text with Markdown and Harlowe (the Twine's sub-language)**
+### **Formating Text with Markdown and Harlowe**
 
 #### **Headlines**
 
@@ -30,31 +30,37 @@ Justified `(align:"<==>")+(box:"X=")[Text you want to affect]`
 
 #### **Text size**
 
-Use the following macro next to the text you wantto affect `(text-size: a number)`
+Use the following macro next to the text you wantto affect (called "changer"). Do not add spaces between the macro and the changer. `(text-size: a number)[changer]` ==> `(text-size: 10)[Hello World]`
+
+## **Intermediate Level**
 
 #### **Text style**
 
-Use the macro `(text-style: "type of string")`
+Use the macro `(text-style: "type of string")[Text you want to change]` ==> `(text-style: "underline")[Hello underlined world]`
 
 Some strings that you can use are: "rumble", "bold", "underline", "strike", "ouline", etc. For a comprehensive list use the following [Cook book](https://twine2.neocities.org/#macro_text-style)
 
 **To change font color**. The basic sintax you need is `(color: color name)[changer]` ==> `(color: red)[Germany]`
 
+## **Itermediate High or Advanced Low Level**
+
 #### **Macros**
 
-Macros are pieces of code that help the game to be more dynamic and interactive. You can use these pieces of code to ask players to enter information that could be used later, to create timers, and other interactive features. Usually, macros work with the following syntax: 
+Macros are pieces of code that help to make the game more dynamic and interactive. As a creator, you can use these pieces of code to a) create prompts where  players will enter information, b) timers that will add tension to the action, and other interactive features. Usually, macros work with the following syntax: 
 
-`(command: "condition")[changer]` ==> `(text-size: 4)[Hello]` In this example, "Hello will be rendered at a size 4 which is around 24 or 30 pts. 
+`(command: "condition")[changer]` ==> `(text-size: 4)[Hello]` In this example, "Hello will be rendered at a size 4 which is around 24 or 30 pts. If you see, we started to use macros and hooks (a macro plus a changer) when we learned how to change text styles and colors. However, the concepts we'll learn below are a bit more complex. 
 
-Some of the ksot popular marcos are: 
+Some of the most popular marcos are: 
 
 * Click macro
-    * `(click: "Name of the clickable word")`
-* Counter macro
+    * `(click: "Name of the clickable word")`. The word referenced in the "condition" (the clickable word) must be part of the narrative you are creating. The click macro must be linked (as a hook) to a condition that will appear when the player clicks the word affected by the click macro.
+    `Eg. Javier turned the lights on ==> (click: "lights")` ==> This code will cause the word "lights" to be illuminated.Wehne we have the click, we can add the action that is going to appear when the player clicks on the word. 
+    `Eg. Javier turded the lights on ==> (click: "lights")[With the lights on, Javier  discovered three big dogs]`
+* Timer macro
     * `(set: "$variable" to "float")` ==> `(set: $counter to 10)`
     * Example used on the game:
         * `You have |amount>[$counter] seconds left!
-(live: 1s)[ (set: $counter to it -1) (if: $counter is 0)[(go-to: "Beginning")] (replace: ?amount)[$counter]]
+(live: 1s)[(set: $counter to it -1) (if: $counter is 0)[(go-to: "Beginning")] (replace: ?amount)[$counter]]
 `
 
 * Conditional macro
@@ -68,44 +74,49 @@ Some of the ksot popular marcos are:
 
 
 
-#### E**mbeding Web Technologies**
+#### **Embeding Web Technologies**
 
 * **Adding image (to passage)**
-    * `<img src = "YOUR URL" height = "300" width = "300">`
+    * `<img src = "YOUR URL" width = "300" height = "300">`
 
-You can change the `src` to whatever image you can find on the web. You can also adjust the height and width. If you want to center you need to add the tag `<center><center>`
+You can change the `src` to whatever image you can find on the web. You can also adjust the width and height. If you want to center the image, you need to add the HTML tag `<center><center>`
 
-You need images from teh internet. Tham means the image needs to have a URL. If there is an image without URL or that you have on your machine, you can upload it to [Wix](https://www.wix.com/), a platform to create websites.
+You need images from the internet. It means that the image needs to have a URL. If there is an image without URL or that you have on your machine, you can upload it to [Wix](https://www.wix.com/), a platform to create websites. Once you upload it there you can get a URL for your image. 
 
 * **Adding a Youtube Video**
     * Go to the [YouTube](https://www.youtube.com/) video you want to copy
-    * Go to the “Share” link
-    * Select the option `< >`, which means that the platform provides the code to embed the video directly in your page.
+    * Go to the `"Share"` link
+    * Select the option `< >`, which means that the platform provides the code to embed the video directly on your page.
     * Copy the code you'll find. It look like the following: 
         * `<iframe width= "560" height= "315" src="https://www.youtube.com/embed/k9wSW51sbuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
 
 * **Adding audio**
 
-At the passage level you need to include the follwoing code: 
-`<sound src=”YOUR URL” autoplay>`. I recommend using the service [Sound Bible](https://soundbible.com/) so you can get diverse sounds and sound effects. 
+At the passage level, you need to include the follwoing code: 
+* `<sound src=”YOUR URL” autoplay>`. 
 
-**Note**: It’s better to add audio command at the end of the page as it will be still playing and won’t execute any other commands set after
+I recommend using the service [Sound Bible](https://soundbible.com/) so you can get diverse sounds and sound effects. 
+
+**Note**: It’s better to add the audio command at the end of the page as it will play on a loop and won’t execute any other commands set after
 
 
   
-#### **Adding Background Image at a Global Level**
+#### **Adding a Background Image at a Global Level (it will affect your entire game/story)**
 
 * Go to Story
-* Click on the “#Stylesheet” link (button)
+* Click on the `“#Stylesheet”` link (button)
 * Add the following code (CSS code): 
+    
     `tw-story {background-image:url(“YOUR URL”); background-size:cover;}`
 
 
 #### **Changing Background Image globally for a passage (using tags)**
 
 
-* Click on the #Stylesheet button and add the following code: `tw-story[tags~=”YOUR TAG NAME”] { background-image:url(“YOUR URL”); background-size:cover;}`
+* Click on the #Stylesheet button and add the following code: 
+
+    `tw-story[tags~=”YOUR TAG NAME”] { background-image:url(“YOUR URL”); background-size:cover;}`
 
 ---
 <font size="0.5">Afro-Latinx Digital Storytelling. A Twine Journey to Narrative Decolonization</font>
