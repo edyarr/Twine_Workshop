@@ -9,7 +9,7 @@
 
 ### 2. Analyzing Twine Games
 
-Twine is an open source platforme used to create both games and interactive stories. The community of creators publishes games on diverse platforms that could be freely accessible or paid. However, the most interesting part is that Twine offers the possibility of publishing interactive stories: the reader gets to decide what the path is. Likewise, game creators consider and showcase their pieces as products that convey deep meaning, and engage societies in thinking, discussing and emnracing important topics while playing. 
+Twine is an open source platform used to create both games and interactive stories. The community of creators publishes games on diverse platforms that could be freely accessible or accessed by paying some fees. However, the most interesting part is that Twine offers the possibility of creating interactive stories: the reader gets to decide what the path is and how to getthrough it. Likewise, game creators consider and showcase their pieces as products that convey deep meaning, and engage societies in thinking, discussing and embracing important topics while playing. 
 
 In twine we have the option of creating diverse types of games:
 - Competitive
@@ -24,7 +24,7 @@ In twine we have the option of creating diverse types of games:
 
 #### Activity. 
 
-* Select one of the games (I'd like you to analyze all of them, so we'll assign one per group/person)
+* Select one of the games (I'd like us to analyze all of them, so we'll assign one per group/person)
 * Play the game
 * Take notes discussing: 
     * What is the type of game you played?
@@ -33,7 +33,7 @@ In twine we have the option of creating diverse types of games:
     * How is it interactive? Explain
     * Who is the intended audience?
     * What is the relationship between you, the player, and the player character (the character controlled by the player)?
-    * What identities do you thinks these narratives games are representing?
+    * What identities do you thinks these narratives/games are representing?
     * How do you evaluate their processes of representation?
     * What would you change from both the user experience and the representational point of view?
 ---
