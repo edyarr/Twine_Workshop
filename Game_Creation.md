@@ -7,7 +7,7 @@
 
 ### 4. **Developing your own game/story**
 
-This is the final stage of the workshop. In this activity, I want you to develop your own game. You need the follow the plan as proposed below: 
+This is the final stage of the workshop. In this activity, I want you to develop your own game. You need to follow the plan as proposed below: 
 
 1. Select a topic from the following list
       1. Topic A
