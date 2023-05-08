@@ -31,7 +31,7 @@ Each of the links will have sub-menus. For instance, `Story` has the following s
 * Duplicate
 * Delete
 
-Let's explore each of the menus and sub-menus. Clcik without hesitation. Your computer won't break. The worst that can happen is that we have to delete something we didn't intend to do.
+Let's explore each of the menus and sub-menus. Click without hesitation. Your computer won't break. The worst that can happen is that we have to delete something we didn't intend to do.
 
 
 #### **What are we going to do in this section?**
