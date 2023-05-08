@@ -29,7 +29,7 @@ In twine we have the option of creating diverse types of games:
 * Take notes discussing: 
     * What is the type of game you played?
     * What is the game's main argument?
-    * What design decisions (at the level of narratie and mechanics) contribute to this argument?
+    * What design decisions (at the level of narrative and mechanics) contribute to this argument?
     * How is it interactive? Explain
     * Who is the intended audience?
     * What is the relationship between you, the player, and the player character (the character controlled by the player)?

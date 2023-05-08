@@ -40,13 +40,13 @@ Use the macro
 
 `(text-style: "type of string")[Text you want to change]` ==> `(text-style: "underline")[Hello underlined world]`
 
-to change the way in which you want your text to be presented. It could fade, be outlined, be bolded, etc. The idea is that such appearance gets connected to a concept or central idea of either the passage or the story in general.
+to change the way in which you want your text to be presented. It could fade, be outlined, be bolded, etc. The idea is that such an appearance gets connected to a concept and/or central idea at the level of either a passage or the whole story .
 
-Some strings that you can use are: "rumble", "bold", "underline", "strike", "ouline", etc. For a comprehensive list use the following [Cook book](https://twine2.neocities.org/#macro_text-style)
+Some strings that you can use are: "rumble", "bold", "underline", "strike", "outline", etc. For a comprehensive list use the following [Cook book](https://twine2.neocities.org/#macro_text-style)
 
 **To change font color**. 
 
-The basic sintax you need is `(color: color name)[changer]` ==> `(color: red)[Germany]`
+The basic syntax you need is `(color: color name)[changer]` ==> `(color: red)[Germany]`
 
 ## **Itermediate High or Advanced Low Level**
 
@@ -58,15 +58,15 @@ Macros are pieces of code that help to make the game more dynamic and interactiv
 
 In this example, `"Hello"` will be rendered at a size 4 which is around 24 or 30 pts. If you see, we started to use macros and hooks (the information that goes into square brackets immediately after a macro) when we learned how to change text styles and colors. However, the concepts we'll learn below are a bit more complex. 
 
-Some of the most popular marcos are: 
+Some of the most popular macros are: 
 
 * Click macro
     * `(click: "Name of the clickable word")`. 
   
     * The word referenced in the "condition" (the clickable word) must be part of the narrative you are creating. The click macro must be linked (as a hook) to a condition that will appear when the player clicks the word affected by the click macro.
   
-    `Eg. Javier turned the lights on ==> (click: "lights")` ==> This code will cause the word "lights" to be illuminated.Wehne we have the click, we can add the action that is going to appear when the player clicks on the word. 
-    `Eg. Javier turded the lights on ==> (click: "lights")[With the lights on, Javier  discovered three big dogs]`
+    `Eg. Javier turned the lights on ==> (click: "lights")` ==> This code will cause the word "lights" to be illuminated. When we have the click, we can add the action that is going to appear when the player clicks on the word. 
+    `Eg. Javier turned the lights on ==> (click: "lights")[With the lights on, Javier  discovered three big dogs]`
 * Timer macro
     * `(set: "$variable" to "float")` ==> `(set: $counter to 10)`
     * Example used on the game:
@@ -98,7 +98,7 @@ You need images from the internet. It means that the image must have a URL. If t
     * Go to the [YouTube](https://www.youtube.com/) video you want to copy
     * Go to the `"Share"` link
     * Select the option `< >`, which means that the platform provides the code to embed the video directly on your page.
-    * Copy the code you'll find. It look like the following: 
+    * Copy the code you'll find. It looks like the following: 
         * `<iframe width= "560" height= "315" src="https://www.youtube.com/embed/k9wSW51sbuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
 
